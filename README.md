@@ -3,9 +3,10 @@
 
 ### Features
 - Mobile Responsive
-- Follows Chrome/Firefox autoplay policy (no autoplay until first click)
-- Displays current song and show info, if available
 - Volume Control
 - Volume persists on page refresh
-- Displays indicator when loading
+- Displays current song and show info, if available
+- Displays loading indicator
 - Mutes audio on pause, so audio stays in sync with server
+- Follows Chrome/Firefox autoplay policy (no autoplay until first click)
+- Offline and web app support
