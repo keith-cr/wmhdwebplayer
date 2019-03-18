@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-default-bootstrap",
+  "name": "wmhd-web-player",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and Bootstrap",
+  "description": "The Web Player for WMHD Online Radio",
   "version": "0.1.0",
   "author": "Keith C-R <keith@kmddigital.com>",
   "dependencies": {
+    "feather-icons": "^4.19.0",
     "gatsby": "^2.1.29",
     "gatsby-image": "^2.0.31",
     "gatsby-plugin-manifest": "^2.0.22",
@@ -13,9 +14,13 @@
     "gatsby-plugin-sharp": "^2.0.26",
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-sharp": "^2.1.15",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.23",
     "prop-types": "^15.7.2",
+    "rc-slider": "^8.6.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-feather": "^1.1.6",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
