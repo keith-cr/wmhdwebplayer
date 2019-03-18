@@ -16,9 +16,7 @@ class IndexPage extends Component {
 
   constructor(props) {
     super(props);
-    var audio = new Audio();
-    audio.volume = 0.25;
-    this.state = { playing: false, loading: false, audio: audio, trackTitle: 'Unknown Song', artistName: 'Unknown Artist', showName: 'Unknown Show' };
+    this.state = { playing: false, loading: false, trackTitle: 'Unknown Song', artistName: 'Unknown Artist', showName: 'Unknown Show', volume: 25 };
   }
 
   onPlayStopClicked() {
@@ -53,16 +51,17 @@ class IndexPage extends Component {
     this.setCookie('volume', value.toString(), 365);
     var audio = this.state.audio;
     audio.volume = value/100;
-    this.setState({audio});
+    this.setState({audio, volume: audio.volume});
   }
 
   componentDidMount() {
+    var audio = new Audio();
+    audio.volume = 0.25;
     var volume = this.getCookie('volume');
     if (volume && !isNaN(parseInt(volume))) {
-      var audio = this.state.audio;
       audio.volume = parseInt(volume)/100;
-      this.setState({audio});  
     }
+    this.setState({audio, volume: audio.volume});
     this.fetchData();
   }
 
@@ -148,7 +147,7 @@ class IndexPage extends Component {
                 <div style={{right: '13px'}} className="col d-flex">
                   <Slider 
                     className={'justify-content-center align-self-center slider'}
-                    value={this.state.audio.volume*100}
+                    value={this.state.volume*100}
                     trackStyle={{ backgroundColor: '#800000', height: 10 }}
                     handleStyle={{
                       boxShadow: "0 0 0 0",
