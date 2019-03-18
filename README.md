@@ -1,2 +1,2 @@
-# Gatsby Bootstrap Starter
-> A Gatsby starter for Bootstrap 4 without using a third-party React libary.
+# WMHD Web Player
+> Listen live to WMHD Online Radio, Rose-Hulman's student radio station
