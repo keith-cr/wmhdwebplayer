@@ -7,3 +7,5 @@
 - Displays current song and show info, if available
 - Volume Control
 - Volume persists on page refresh
+- Displays indicator when loading
+- Mutes audio on pause, so audio stays in sync with server
